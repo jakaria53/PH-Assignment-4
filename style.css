@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Geist", sans-serif;
+}
+
+header #counter-dp {
+  max-width: 70%;
+  box-shadow: 0px 0px 25px 9px #6666661b;
+  margin: 60px auto;
+  padding: 30px 20px;
+}
+
+header #counter-dp h1 {
+  margin-bottom: 20px;
+  color: #002c5c;
+}
+
+header #counter-dp > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header #counter-dp > div > div {
+  box-shadow: 0px 0px 25px 9px #6666661b;
+  padding: 10px 20px;
+  width: 340px;
+  border-radius: 8px;
+}
+
+header #counter-dp > div > div p {
+  color: #323b49;
+  font-size: 20px;
+}
+.hidden {
+  display: none !important;
+}
+
+#total-dp,
+#interview-dp,
+#rejected-dp {
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#total-dp {
+  color: #002c5c;
+}
+
+#interview-dp {
+  color: #10b981;
+}
+
+#rejected-dp {
+  color: #ef4444;
+}
+
+main #job-header {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+  border-top: 3px solid #0000000f;
+}
+
+#job-header .avjobs-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#job-header .avjobs-title h3 {
+  color: #002c5c;
+}
+
+#job-header .avjobs-title p {
+  color: #64748b;
+}
+
+#job-header .btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+#job-header .btn-container button {
+  width: 80px;
+  background: #fff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #0000001b;
+  cursor: pointer;
+}
+
+#All-job,
+#filtered-container {
+  max-width: 70%;
+  margin: 30px auto;
+}
+
+#filtered-container .job-card,
+#filtered-container .card,
+#All-job .job-card,
+#All-job .card {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  margin: 30px auto;
+  box-shadow: 0px 0px 25px 9px #74747413;
+}
+
+#filtered-container .job-card h2,
+#filtered-container .card h2,
+#All-job .job-card h2,
+#All-job .card h2 {
+  color: #002c5c;
+}
+
+#filtered-container .job-card p,
+#filtered-container .card p,
+#All-job .job-card p,
+#All-job .card p {
+  color: #64748b;
+}
+
+#filtered-container .black-p,
+#All-job .black-p {
+  color: #000;
+}
+
+#filtered-container #status,
+#All-job #status {
+  background: #eef4ff;
+  font-weight: bold;
+  color: #002c5c;
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+#filtered-container .btn-container,
+#All-job .btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+#filtered-container .btn-container button,
+#All-job .btn-container button {
+  background: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#filtered-container .interview-btn,
+#All-job .interview-btn {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+#filtered-container .rejected-btn,
+#All-job .rejected-btn {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+#filtered-container #delete-icon,
+#All-job #delete-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 40px;
+  cursor: pointer;
+  color: red;
+}
+
+#no-job-dp {
+  box-shadow: 0px 0px 25px 9px #8c8c8c18;
+  max-width: 70%;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#no-job-dp h2 {
+  color: #002c5c;
+}
+
+#no-job-dp p {
+  color: #64748b;
+}
+
+@media screen and (max-width: 576px) {
+  header #counter-dp {
+    max-width: 90%;
+    margin: 10px auto 40px;
+  }
+
+  header #counter-dp > div {
+    display: grid;
+    gap: 20px;
+    justify-self: center;
+    align-items: center;
+  }
+
+  main #job-header {
+    max-width: 90%;
+  }
+
+  #All-job,
+  #filtered-container {
+    max-width: 90%;
+  }
+
+  #no-job-dp {
+    max-width: 90%;
+  }
+}
