@@ -74,7 +74,7 @@ document.getElementById("child").addEventListener("click", () => { console.log("
 Ans: Event Delegation means —
 Not setting a separate listener on the child element
 Setting a listener on the parent
-Then checking with event.target
+Then checking with event.target.
 
 # Why is it useful?
 
@@ -105,13 +105,10 @@ event.preventDefault();
 It stops page reload.
 
 * stopPropagation()
-
 It stops event bubbling.
 
 Example:
 If I click button inside main,
 and I use:
-
 event.stopPropagation();
-
 The event will NOT go up to parent.
